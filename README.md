@@ -7,3 +7,8 @@
  Títulos
  Parágrafos
  listas
+
+# Aula 2:
+
+  Atividade realizada: 
+  Criar um projeto: Loja de Disco 
