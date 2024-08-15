@@ -1,0 +1,11 @@
+p.subsecao{  /* seletor de classe, não altera direta as tags da pagina do html, aplicado em h2*/
+    color: violet;
+}
+
+h2.subsecao{
+    color: aquamarine;
+}
+
+.subsecao.sublinhado{
+    text-decoration: underline;
+}
