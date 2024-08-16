@@ -1,0 +1,20 @@
+p[id]{
+    color: red;
+}
+
+a[href^="http"]{
+    background-color: green;
+    color: white;
+}
+
+a[href$=".com.br"]{
+    border: 3px solid black
+}
+
+p[class=lua]{
+    background-color: aqua;
+}
+
+p[class*="lua"]{
+    background-color: aqua;
+}
