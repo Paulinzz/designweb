@@ -1,0 +1,27 @@
+/* Seletores de Atributos com ^= (começa com) */
+a[href^="https"] {
+    color: green; /* Links que começam com https terão a cor verde */
+}
+
+/* Seletores de Atributos com $= (termina com) */
+img[src$=".jpg"] {
+    border: 2px solid blue; /* Bordas azuis para imagens com .jpg */
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra para imagens com .jpg */
+}
+
+/* Seletores de Atributos com *= (contém) */
+span.name:contains("vender") + button {
+    background-color: red; /* Botões relacionados a produtos com "vender" terão fundo vermelho */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Seletores de Atributos com |= (valor exato ou começa com) */
+li[class^="prod-"] {
+    background-color: #f0f0f0; /* Fundo cinza claro para todos os produtos começando com "prod-" */
+    padding: 10px;
+    margin: 5px 0;
+}
+
+li[class="prod-new"] {
+    border: 2px solid green; /* Bordas verdes para produtos com exatamente "prod-new" */
+}
