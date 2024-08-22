@@ -4,13 +4,13 @@ a[href^="https"] {
 }
 
 /* Seletores de Atributos com $= (termina com) */
-img[src$=".jpg"] {
+img[src$=".bing"] {
     border: 2px solid blue; /* Bordas azuis para imagens com .jpg */
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3); /* Sombra para imagens com .jpg */
 }
 
 /* Seletores de Atributos com *= (contém) */
-span.name:contains("vender") + button {
+span.name + button {
     background-color: red; /* Botões relacionados a produtos com "vender" terão fundo vermelho */
     font-weight: bold; /* Texto em negrito */
 }
