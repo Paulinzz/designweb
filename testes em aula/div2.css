@@ -1,0 +1,24 @@
+h1 + a{
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    border: 1px solid rgb(76, 30,30);
+}
+
+p{
+    text-align: justify;
+}
+
+.containerr{
+    background-color: aquamarine;
+    border: 1px solid black;
+    width: 80%;
+    padding: 20px 40px;
+    margin: 10px 0;
+}
+
+.link-revisão{
+    background-color: lightblue;
+    color: black;
+    padding: 20px 100px 20px 100px;
+}
