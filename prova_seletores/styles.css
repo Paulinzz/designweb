@@ -1,0 +1,29 @@
+h1 {
+    color: blue; /* Cor do título principal */
+}
+
+strong {
+    color: red; /* Cor do texto dentro da tag <strong> */
+}
+
+p {
+    max-width: 600px; /* Largura máxima dos parágrafos */
+    margin: 0 auto; /* Centraliza os parágrafos na página */
+}
+
+.highlight {
+    background-color: lightyellow; /* Cor de fundo do parágrafo com classe highlight */
+}
+
+#contact {
+    font-style: italic; /* Texto em itálico para o subtítulo com id contact */
+}
+
+a[href="#"] {
+    color: green; /* Cor do link quando o atributo href está vazio */
+}
+
+#contact + p {
+    background-color: lightgray; /* Cor de fundo do parágrafo que segue o subtítulo "Fale Conosco" */
+}
+
