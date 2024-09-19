@@ -1,0 +1,60 @@
+body{
+    font-family: arial, sans-serif;
+    background-color: lemonchiffon;
+    margin: 0;
+    padding: 0;
+}
+
+.caixa_imagens{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.caixa_de_pesquisa{
+    background-color: aliceblue;
+    padding: 10px;
+    text-align: right;
+}
+
+.caixa_de_pesquisa a{
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+    font-size: 18px;
+
+}
+
+.caixa_de_pesquisa a:hover{
+    color: blue;
+}
+
+.imagens{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.box{
+    background-color: rgb(248, 237, 141);
+    border: 1px solid darkgreen;
+    padding: 10px;
+    margin: 0 10px;
+    width: 200px;
+
+}
+
+.box img{
+    width: 100%;
+    height: auto;
+}
+
+.box h3{
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.box p{
+    font-size: 18px;
+    text-align: justify;
+}
