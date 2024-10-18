@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        header{
+            background-color: #5f3831;
+            padding: 10px;
+            text-align: right;
+        }
+
+        header nav ul{
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        header nav ul li{
+            display: inline;
+            margin-left: 20px;
+        }
+
+        .container{
+            width: 100%;
+            height: 100vh;
+            display: flex;
+        }
+
+        .sidebar img{
+            display: block;
+            margin: 0 auto;
+            width: 100px;
+            height: auto;
+        }
+
+        .menu{
+            margin-top: 20px;
+            list-style: none;
+            padding: 0;
+        }
+
+        .menu li{
+            margin-bottom: 10px;
+        }
+
+        .menu li a{
+            display: block;
+            padding: 10px;
+            background-color: wheat;
+            text-align: center;
+            text-decoration: none;
+            color: #5f3831;
+            border-radius: 5px;
+        }
+
+        .menu li a :hover{
+            background-color: #ddcfc4;
+        }
+
+        .content{
+            width: 80%;
+            padding: 20px;
+            float: right;
+            background-color:#f9f4ef;
+        }
+
+        .h1{
+            font-size: 24px;
+            color: #5f3831;
+        }
+
+    
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Receitas</a></li>
+                <li><a href="#">Amigos</a></li>
+                <li><a href="#">Contato</a></li>
+                <li><a href="#">Inicial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+<div class="container">
+    <div class="sidebar">
+        <img src="data:image/jpeg;base64,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" alt="logo">
+        <ul class="menu">
+            <li><a href="#">Receitas</a></li>
+            <li><a href="#">Amigos</a></li>
+            <li><a href="#">Contato</a></li>
+            <li><a href="#">Sair</a></li>
+
+        </ul>
+    </div>
+
+    <div class="content">
+        <h1>conteudo</h1>
+        <p>aqui</p>
+    </div>
+    <header>
+        <nav>
+        <div class="final">ㅤ</div>
+            </nav>
+    </header>
+</div>
+</body>
+</html>
