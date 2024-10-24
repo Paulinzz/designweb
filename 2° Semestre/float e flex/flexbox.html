@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        div{
+            border: 1px solid black;
+        }
+        .container{
+            display: flex;
+            height: 100px;
+            flex-direction: row-reverse;
+        }
+        .container-inline{
+            display: inline-flex; 
+            height: 100px;
+        }
+
+        .container-flex{
+            display: flex;
+            flex-wrap: wrap;
+
+        }
+
+        div > div{
+            border: 1px dotted blue
+        }
+
+        .container-start{
+            display: flex;
+            justify-content: flex-start;
+        }
+
+        .container-center{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+    </style>
+<body>
+
+    <div class="container"> <! # ocupa o todo o espaço -->
+        <div>texto1</div>
+        <div>texto2</div>
+        <div>texto3</div>
+    </div>
+
+    <div class="container-inline">  <! # ocupa só o necessario  -->
+        <div>texto1</div>
+        <div>texto2</div>
+        <div>texto3</div>
+    </div>
+
+    <div class="container-start">  
+        <div>texto1</div>
+        <div>texto2</div>
+        <div>texto3</div>
+    </div>
+
+    <div class="container-cenet">  
+        <div>texto1</div>
+        <div>texto2</div>
+        <div>texto3</div>
+    </div>
+
+    <div class="container-flex"> <! # ocupa o todo o espaço -->
+        <div>texto1</div>
+        <div>texto2</div>
+        <div>texto3</div>
+        <div>texto4</div>
+        <div>texto5</div>
+        <div>texto6</div>
+        <div>texto7</div>
+        <div>texto8</div>
+        <div>texto9</div>
+        <div>texto10</div>
+
+
+
+        
+        
+        
+</body>
+</html>
