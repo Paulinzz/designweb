@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .container{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            padding: 3px;
+            height: 100px;
+            align-items: center;
+        }
+
+        .container-2{
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+            padding: 3px;
+            height: 100px;
+            align-content: center;
+        }
+        .container > div{
+            border: 1px solid blue;
+        }
+
+        div > div{
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <h2>Allign Itens</h2>
+    <div class="container">
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+    </div>
+
+    <h2>Align-Content</h2>
+    <div class="container-2">
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+        <div>texto</div>
+    </div>
+</body>
+</html>
