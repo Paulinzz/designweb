@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.email-container {
+    width: 500px;
+    border: 1px solid #ccc;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #f7f7f7;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+.input-campo {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.campo {
+    margin-bottom: 10px;
+}
+
+.campo label {
+    display: block;
+    font-size: 14px;
+    color: #555;
+}
+
+.campo input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+.mensagem {
+    padding: 15px;
+    font-size: 14px;
+    color: #333;
+}
+
+.mensagem blockquote {
+    text-align: right;
+    font-style: italic;
+    color: #777;
+    margin-top: 10px;
+}
+
+.encaminhamento {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 15px;
+    border-top: 1px solid #ddd;
+}
+
+.button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.outros {
+    display: flex;
+    gap: 8px;
+}
+
+.icon {
+    font-size: 18px;
+    cursor: pointer;
+    color: #555;
+}
+
+.icon:hover {
+    color: #000;
+}
