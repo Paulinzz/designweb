@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de Design Web - Flexbox</title>
+    <style>
+        /* Estilos Globais */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Questão 1: Layout com Flexbox */
+        .header {
+            width: 100%;
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .sidebar {
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        .left {
+            flex: 1 1 20%;
+            order: 1;
+        }
+
+        .content {
+            flex: 1 1 60%;
+            order: 2;
+            padding: 20px;
+        }
+
+        .right {
+            flex: 1 1 20%;
+            order: 3;
+        }
+
+        /* Responsivo para telas menores */
+        @media (max-width: 768px) {
+            .left, .right, .content {
+                flex: 1 1 100%;
+            }
+            .left { order: 1; }
+            .content { order: 2; }
+            .right { order: 3; }
+        }
+
+        /* Questão 2: Menu de Navegação Responsivo */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px;
+        }
+
+        .nav-list {
+            display: flex;
+            list-style-type: none;
+        }
+
+        .nav-list li {
+            margin: 0 15px;
+        }
+
+        .nav-list a {
+            color: white;
+            text-decoration: none;
+        }
+
+        .hamburger {
+            display: none;
+            font-size: 24px;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Responsivo para o menu */
+        @media (max-width: 768px) {
+            .nav-list {
+                display: none;
+                flex-direction: column;
+            }
+
+            .hamburger {
+                display: block;
+            }
+
+            .navbar.active .nav-list {
+                display: flex;
+            }
+        }
+
+        /* Questão 3: Galeria de Imagens Responsiva */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery-item {
+            flex: 1 1 calc(25% - 10px);
+            height: 200px;
+            background-color: #ddd;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 18px;
+            color: #333;
+        }
+
+        /* Ajuste para tablets */
+        @media (max-width: 1024px) {
+            .gallery-item {
+                flex: 1 1 calc(33.33% - 10px);
+            }
+        }
+
+        /* Ajuste para celulares */
+        @media (max-width: 768px) {
+            .gallery-item {
+                flex: 1 1 calc(50% - 10px);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">Cabeçalho</header>
+    <div class="container">
+        <aside class="sidebar left">Barra Lateral Esquerda</aside>
+        <main class="content">Conteúdo Principal</main>
+        <aside class="sidebar right">Barra Lateral Direita</aside>
+    </div>
+    <nav class="navbar">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Sobre</a></li>
+            <li><a href="#">Serviços</a></li>
+            <li><a href="#">Contato</a></li>
+        </ul>
+        <div class="hamburger">&#9776;</div>
+    </nav>
+
+    <div class="gallery">
+        <div class="gallery-item">Imagem 1</div>
+        <div class="gallery-item">Imagem 2</div>
+        <div class="gallery-item">Imagem 3</div>
+        <div class="gallery-item">Imagem 4</div>
+        <div class="gallery-item">Imagem 5</div>
+        <div class="gallery-item">Imagem 6</div>
+    </div>
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navbar = document.querySelector('.navbar');
+
+        hamburger.addEventListener('click', () => {
+            navbar.classList.toggle('active');
+        });
+    </script>
+
+</body>
+</html>
