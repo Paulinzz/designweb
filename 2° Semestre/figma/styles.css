@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+  
+  .logo img {
+    height: 30px;
+    margin-right: 10px;
+  }
+  
+  .search-bar {
+    display: flex;
+    align-items: center;
+  }
+  
+  .search-bar input {
+    border: 1px solid #ccc;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  
+  .search-bar button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    border: none;
+    background-color: #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .header-icons button {
+    margin-left: 10px;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+  
+  .upload-btn {
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+  }
+  
+  .container {
+    display: flex;
+  }
+  
+  .sidebar {
+    flex: 0 0 200px;
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-right: 1px solid #ddd;
+    height: calc(100vh - 60px);
+  }
+  
+  .sidebar nav ul {
+    list-style: none;
+  }
+  
+  .sidebar nav ul li {
+    padding: 10px 0;
+    cursor: pointer;
+  }
+  
+  .sidebar nav ul li .red-dot {
+    background-color: red;
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: 5px;
+  }
+  
+  .sidebar footer {
+    margin-top: 20px;
+    font-size: 0.9rem;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 0 1 calc(33.333% - 20px);
+    background-color: #ddd;
+    height: 200px;
+    border-radius: 8px;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .grid {
+      flex-direction: column;
+    }
+  
+    .sidebar {
+      flex: 0 0 100px;
+    }
+  
+    .card {
+      flex: 0 1 100%;
+    }
+  }
+  
