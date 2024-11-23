@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.5;
+}
+
+.menu {
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  padding: 10px 0;
+  margin-bottom: 20px;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.menu a {
+  text-decoration: none;
+  color: #000;
+  font-weight: bold;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: space-between;
+}
+
+.artigos {
+  flex: 3;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.artigo {
+  background-color: #fce5cd;
+  flex: 1 1 calc(25% - 20px); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  min-height: 150px;
+}
+
+.painel {
+  display: flex;
+  gap: 20px;
+}
+
+.box {
+  background-color: #f7dbd7;
+  padding: 20px;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.box1 {
+  background-color: #800080; 
+  color: #fff;
+}
+
+.box2 input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+button:hover {
+  background-color: #ff8000;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .artigos {
+    flex: 1;
+  }
+
+  .artigo, .painel {
+    flex: 1;
+  }
+}
