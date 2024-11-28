@@ -1,0 +1,63 @@
+.container-titulo{
+    background-color: rgb(236, 211, 97);
+    padding: 20px;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    line-height: 1.5;
+    margin: 0;
+}
+
+.menu {
+    background-color: #c4c4c4;
+    border-bottom: 1px solid #c4c4c4;
+    padding: 10px 0;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+  
+.menu a {
+    text-decoration: none;
+    color: #f1de32;
+    font-weight: bold;
+    
+}
+
+.menu button{
+    width: 400px;
+    padding: 30px;
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.menu button:hover {
+    background-color: #f3cc6193;
+}
+
+
+.card{
+    display: flexbox;
+    column-gap: 1px;
+    width: 20px;
+    gap: 20px;
+}
+.conjunto{
+    gap: 20px;
+    padding: 10px;
+    height: 50%;
+}
+
+
+.rodape{
+    background-color: rgb(236, 211, 97);
+    padding: 20px;
+}
