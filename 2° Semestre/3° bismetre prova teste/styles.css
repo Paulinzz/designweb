@@ -1,0 +1,105 @@
+/* Estilos Gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  header {
+    flex: 0 0 auto;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    text-align: center;
+  }
+  
+  footer {
+    flex: 0 0 auto;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
+  /* Sidebar e Main */
+  main {
+    flex: 1 0 auto;
+    display: flex;
+  }
+  
+  .sidebar {
+    flex: 0 0 20%;
+    background-color: #f4f4f4;
+    padding: 10px;
+  }
+  
+  .sidebar nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar nav ul li {
+    margin: 10px 0;
+  }
+  
+  .sidebar nav ul li a {
+    text-decoration: none;
+    color: #333;
+  }
+  
+  .content {
+    flex: 1 1 auto;
+    padding: 20px;
+  }
+  
+  /* Cards Responsivos */
+  .cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .card {
+    flex: 1 1 25%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .card img {
+    max-width: 100%;
+    border-radius: 5px;
+  }
+  
+  .card h3 {
+    margin: 10px 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 1024px) {
+    .card {
+      flex: 1 1 50%;
+    }
+  
+    .sidebar {
+      flex: 0 0 30%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .card {
+      flex: 1 1 100%;
+    }
+  
+    .sidebar {
+      display: none;
+    }
+  
+    .content {
+      padding: 10px;
+    }
+  }
+  
