@@ -1,0 +1,53 @@
+/* Estilo geral da barra de navegação */
+.navbar {
+    background-color: #6087ae;
+    padding: 10px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.navbar a:hover {
+    color: lightgray;
+}
+
+/* Botão "Menu" */
+.menu-btn {
+    display: none;
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 600px) {
+    .menu-btn {
+        display: block;
+    }
+
+    .navbar ul {
+        display: none;
+        flex-direction: column;
+        align-items: flex-start;
+        background-color: #3f5a74;
+        padding: 10px;
+    }
+
+    #menu-toggle:checked + .menu-btn + ul {
+        display: flex;
+    }
+}

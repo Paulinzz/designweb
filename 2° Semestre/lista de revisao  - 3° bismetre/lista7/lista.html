@@ -1,0 +1,48 @@
+<!----- * Crie uma tela de login com a seguinte estrutura: ->
+
+Divisão da tela: A tela deve ser dividida ao meio.
+Lado esquerdo: Contém o formulário de login com os campos email, nome e senha. Além disso, deve haver dois botões:
+Um para entrar.
+Outro para registrar-se.
+Lado direito: Exibe a logo da aplicação (uma imagem).
+Recuperação de senha: Adicione uma mensagem de recuperação de senha logo abaixo do formulário.
+Responsividade: Em dispositivos smartphones (largura menor que 768px), a imagem da logo deve ser ocultada, e o formulário deve ocupar toda a largura da tela. \\* --->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista 7</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container-login">
+        <div class="login-forms">
+            <h2>Login</h2>
+            <form>
+                <div class="input">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" placeholder="email" required>
+                </div>
+                <div class="input">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" placeholder="nome" required>
+                    </div>
+                    <div class="input">
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" placeholder="senha" required>
+                    </div>
+                     <button type="submit" class="butao">Entrar</button>
+                     <button type="button" class="butao" conclick="location.href='register.html'">Registrar-se</button
+            </form>
+            <p><a href="#"></a>Esqueceu a senha?</a></p>
+        </div>
+        <div class="logo">
+            <img src="https://via.placeholder.com/300" alt="Logo da aplicação">
+        </div>
+    </div>
+</body>
+</html>

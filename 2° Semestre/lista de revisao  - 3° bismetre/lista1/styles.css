@@ -1,0 +1,32 @@
+h1{
+    font-family: sans-serif;
+    color: rgb(0, 100, 231)
+}
+
+p{
+    font-style: italic;
+    line-height: 1,5;
+}
+
+li{
+    background-color: gray;
+}
+
+.destacado{
+    background-color: yellow;
+}
+
+a :hover{
+    color: red
+}
+
+#intro{
+    color: red;
+    font-size: 18px;
+}
+
+
+ol li[value^="importante"]{
+    color: green;
+    font-weight: bold;
+}

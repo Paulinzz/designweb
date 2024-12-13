@@ -1,0 +1,24 @@
+header{
+    background-color: gray;
+}
+
+section > h2{
+    color: rgb(8, 8, 113);
+    font-size: 24px;
+}
+
+main > section:nth-of-type(2) li { color: green; }
+
+footer > p{
+    color: gray
+}
+
+:first-of-type > h2 + p{
+    color: darkblue;
+    font-weight: bold;
+}
+
+footer > div > *{
+    margin-top: 10px;
+    color: gray;
+}
