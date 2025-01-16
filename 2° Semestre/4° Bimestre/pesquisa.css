@@ -1,0 +1,27 @@
+/* cor do link não visitado */
+a:link {
+    color: red;
+}
+
+/* cor do link visitado */
+a:visited {
+    color: green;
+}
+
+/* cor do mouse over no link */
+a:hover {
+    color: hotpink;
+}
+
+/* cor do link quando ativo */
+a:active {
+    color: blue;
+}
+
+
+:link { color: #0000EE; }                          /* cor azul padrão */
+:visited { color: #551A8B; }                       /* cor roxa visitado */
+:link:active, :visited:active { color: #FF0000; }  /* cor vermelha ativo */
+:link, :visited { text-decoration: underline; cursor: pointer; }
+a:link[rel~=help], a:visited[rel~=help],
+area:link[rel~=help], area:visited[rel~=help] { cursor: help; }
