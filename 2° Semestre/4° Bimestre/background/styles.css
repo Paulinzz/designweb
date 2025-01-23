@@ -1,0 +1,30 @@
+.card{
+    width: 200px;
+    height: 150px;
+    border: 10px dashed;
+    background-color: lightblue;
+    margin-right: 10px;
+}
+
+body{
+    height: 100vh;
+    display: flex;
+}
+
+.padding-box{
+    background-clip: padding-box;
+}
+
+.content-box{
+    padding: 10px;
+    background-clip: content-box;
+}
+
+.text{
+    background-clip: text;
+    background-color: red;
+}
+
+card h1{
+    font-size: 40px;
+}
