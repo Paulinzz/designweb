@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova de Design Web</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Prova de Design Web</h1>
+    </header>
+    
+    <section class="questoes">
+        <div class="questao">
+            <h2>1. Flexbox</h2>
+            <p>Explique o que faz as seguintes propriedades do Flexbox:</p>
+            <ul>
+                <li><code>justify-content: space-between;</code></li>
+                <li><code>align-items: center;</code></li>
+                <li><code>flex-grow: 1;</code></li>
+            </ul>
+        </div>
+
+        <div class="questao">
+            <h2>2. Media Queries</h2>
+            <p>Escreva um código CSS que torne um elemento <code>&lt;div&gt;</code> de largura 100% em telas menores que 600px, mas mantenha 50% de largura em telas maiores.</p>
+        </div>
+
+        <div class="questao">
+            <h2>3. Background</h2>
+            <p>Qual a diferença entre as propriedades <code>background-image</code> e <code>background-color</code>? Dê exemplos.</p>
+        </div>
+
+        <div class="questao">
+            <h2>4. Pseudo-classes</h2>
+            <p>Crie um botão que mude de cor quando o mouse passa por cima usando uma pseudo-classe.</p>
+        </div>
+
+        <div class="questao">
+            <h2>5. Pseudo-elementos</h2>
+            <p>Use <code>::before</code> e <code>::after</code> para adicionar ícones antes e depois de um texto de parágrafo.</p>
+        </div>
+    </section>
+</body>
+</html>
+
+<style>
+    body {        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: white;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .questoes {
+        width: 80%;
+        margin: 20px auto;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .questao {
+        background: white;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+    }
+
+    button:hover {
+        background-color: #555;
+        color: white;
+    }
+
+    p::before {
+        content: "➡ ";
+    }
+    p::after {
+        content: " ⬅";
+    }
+</style>
