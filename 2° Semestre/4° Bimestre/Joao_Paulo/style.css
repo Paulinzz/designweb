@@ -1,0 +1,150 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background: linear-gradient(to bottom, #f8ff90, #ddd);
+}
+
+header h1 {
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+header p {
+  font-size: 18px;
+  color: #666;
+}
+
+.content{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+
+article section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+article section h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+article section img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+article section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+article section ul li {
+  margin-bottom: 10px;
+}
+
+article section ul li::before {
+  content: "\2022";
+  font-size: 10px;
+  color: #666;
+  margin-right: 10px;
+}
+
+#redes-sociais {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  width: 100%;
+  height: 100%;
+  background: url('Ayrton\ Senna\,\ f1\,\ mclaren\,\ brazil\,\ formula\ 1\,\ honda\,\ flag\,\ HD\ wallpaper.jfif') no-repeat center center;
+  background-size: cover;
+  opacity: 0.5;
+  gap: 10px;
+}
+
+#redes-sociais a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: black;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+#redes-sociais a::before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  background-image: url("images__2_-removebg-preview.png");
+  background-size: contain;
+  margin-right: 10px;
+}
+
+#redes-sociais a:hover {
+  background-color: #ddd;
+  color: #ff04c9;
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(239, 241, 206);
+  color: rgb(10, 9, 9);
+  text-align: center;
+  padding: 10px 0;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer ul li::before {
+  content: "Hobbies: ";
+  font-size: 18px;
+  color: #666;
+}
