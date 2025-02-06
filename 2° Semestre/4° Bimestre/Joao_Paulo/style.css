@@ -5,6 +5,7 @@
     box-sizing: border-box;
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
+    background: linear-gradient(to bottom, #ddd, #837880)
 }
 
 header {
